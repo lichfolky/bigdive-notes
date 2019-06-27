@@ -1,3 +1,9 @@
+**git Add** staging
+**git Commit** snapshot
+**git Push** is a shortcut to git fetch & git merge
+
+
+
 ### Start a git repo on Github
 Move to the folder then Setup the folder
 ```
@@ -57,56 +63,26 @@ the dot hide the file!
   to see it:
 > ls -al
 
-
-
-
-
-git add filename //add file to the repo
-
-git rm file //remove
-
-git commit -m "txt" //m stands for message
-
-git config --global user.email "" // global is for all sys
-
-git push
-
-git pull
-
-to set a master source and push changes to github
+### Config global user data
 ```
-git push --set-upstream https://github.com/lichfolky/BIGDIVE8_MyStuff.git`
+git config --global user.email
+git config --global user.name "Your Name"
 ```
-
-
-\\ commit and adding the already added file
-git commit -am "ciao"
-
-
-git remote add origin git@github.com:lichfolky/BIGDIVE8_MyStuff.git
-
-git push -u origin master
-
-////
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
 After doing this, you may fix the identity used for this commit with:
 
-git commit --amend --reset-author
-///
+`git commit --amend --reset-author`
 
-$ git remote rm origin
-$ git remote add origin git@github.com:aplikacjainfo/proj1.git
-$ git config master.remote origin
-$ git config master.merge refs/heads/master
+### undo changes
 
+**git checkout -- filename** can be used to undo change  
+**git stash** -> undo but save the state  
+**git reset --hard** super reset
 
-Example: Contribute to an existing repository
+you can undo commits!
+____
+
+### Contribute to an existing repository
+```
 # download a repository on GitHub.com to our machine
 git clone https://github.com/me/repo.git
 
@@ -117,7 +93,7 @@ cd repo
 git branch my-branch
 
 # switch to that branch (line of development)
-git checkout my-branch
+#git checkout my-branch
 
 # make changes, for example, edit `file1.md` and `file2.md` using the text editor
 
@@ -130,24 +106,12 @@ git commit -m "my snapshot"
 # push changes to github
 git push --set-upstream origin my-branch
 
-Example: Start a new repository and publish it to GitHub
 
-# create a new directory, and initialize it with git-specific functions
-git init my-repo
 
-# change into the `my-repo` directory
-cd my-repo
-
-# create the first file in the project
-touch README.md
-
-# git isn't aware of the file, stage it
-git add README.md
-
-# take a snapshot of the staging area
+ take a snapshot of the staging area
 git commit -m "add README to initial commit"
 
-# provide the path for the repository you created on github
+ provide the path for the repository you created on github
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 
 create a git ignore file
