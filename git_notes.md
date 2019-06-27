@@ -1,29 +1,65 @@
-setup a git repo
+### Start a git repo on Github
+Move to the folder then Setup the folder
 ```
 git init
 ```
-see status
+Setup a git repo
 ```
-git status
+git init
 ```
-add the rep to github
-```
-git remote add origin https://github.com/lichfolky/BigDive8Notes.git
-```
-
-remove git init
-```
-rm -rf .git
-```
-add all files
+Check in all files
 ```
 git add .
 ```
-To push the current branch and set the remote as upstream, use
+Commit and add all the files (m stands for message)
+```
+git commit -m "my message text"
+```
+Add the rep origin github
+```
+git remote add origin https://github.com/lichfolky/BigDive8Notes.git
+```
+Push the current branch to the remote  upstream
 ```
 git push origin master
+# or
 git push --set-upstream origin master
 ```
+remove git init (if something bad happens)
+```
+rm -rf .git
+```
+to see the git repository status
+```
+git status
+```
+
+### Ignore files
+in the main folder, create a .gitignore file.
+```
+touch .gitignore
+```
+If the files are already checked in (added)
+```
+git rm --cached FILENAME
+```
+Create a global .gitignore
+~/.gitignore_global
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
+the rules are regex
+> es:  
+> .DS_Store  
+> \*.class
+
+the dot hide the file!
+  to see it:
+> ls -al
+
+
+
+
 
 git add filename //add file to the repo
 
