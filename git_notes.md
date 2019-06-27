@@ -15,9 +15,13 @@ remove git init
 ```
 rm -rf .git
 ```
-
+add all files
+```
+git add .
+```
 To push the current branch and set the remote as upstream, use
 ```
+git push origin master
 git push --set-upstream origin master
 ```
 
@@ -38,10 +42,6 @@ to set a master source and push changes to github
 git push --set-upstream https://github.com/lichfolky/BIGDIVE8_MyStuff.git`
 ```
 
-to add all!
-```
-git add .
-```
 
 \\ commit and adding the already added file
 git commit -am "ciao"
