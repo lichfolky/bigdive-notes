@@ -1,0 +1,47 @@
+polar region
+ice charting
+-SAR data
+melt water on top of ice similar to the ocean, difficult to distinct
+uniform smooth ice, new ice, icebergs (to not consider)
+predict ice concentration, ice type, fraction
+Ice egg, numbers on the top
+
+
+Ice analyst
+see multiple information to classify ice optical,
+ passive microvawe SIC ,thermal-infrared, SAR(radar)
+
+using ArcGis/SIKU
+
+in polar region a lot of clouds
+-
+result pdf with map
+ice moves! The sooner
+
+
+sun reflect and blind optical obesrvator
+but radar measures (the intensity of the return signal as a funcion of time
+ (translate to a function of dinstance))
+it see throught clouds!
+
+SENTINEL 1
+
+dataset two layers of dataset H and H+V
+incidence angle
+
+more rought it's the ice more the incident wawe is big (more return)
+
+amplitude vs incidence angle
+varies a lot with incidence angke, rìnd speed, relative wind direction
+
+radarsat
+automated production of icecharts
+
+multi temporal
+SAR backscatter of ocean varies with incidence angle wind speed and direction
+sar backscatter form ice varies with incidence angle
+
+dataset NetCDF files
+some HH
+Some HV
++incidence angles

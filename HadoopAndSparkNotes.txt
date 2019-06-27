@@ -1,0 +1,147 @@
+Hadoop and Spark
+
+Agile Lab Big Data
+
+Big Data
+
+should you trust data?
+  machine generated data (Iot)
+
+  Volume: giga -> thera ->
+  Velocity: sensor data, financial transactions
+  Variety: different formats
+
+requirements:
+  multi-region
+  fast and reliable response
+  no single point of failures
+
+why not a traditional DBMS?
+  Relational
+  normalized table schema
+  cross table joins
+  ACID compliance
+    atomicity, Consistency, isolation, durability
+    https://en.wikipedia.org/wiki/ACID
+
+  because table joins require massive overhead
+  sharing tables across systems is complex and fragile
+
+  network, latency
+
+  no need "always on" Consistency
+  transactional guarantees is limited
+
+  significant cost advantages
+
+dataGeneration->DataIngestion->DataAggregation->DataElaboration->DataVisualization->DataRetail
+
+NOSQL:
+  Graph data related Data
+  Key-Value: key aps arbitrary values of any data type
+  Documents: Doc set (json) queryable in whole or part
+  Column Family: key mapped to sets of n numer of typed columns
+
+Consistency: identical results, regardless which node is queried
+Availability: can the cluster respond to very high write and read volumes?
+Partition Tolerance: is the cluster still still available when part of it goes dark
+
+every note is independ (shared-nothing) architecture
+no locking concurrency contro
+hight per note performance
+scalable
+schema-less Data Model: you don't have comple
+
+CAP Theorem
+  Consistency, Partition Tolerance (distributed), Availability : CHOOSE TWO
+
+Kubernets, Docker (orchestration)
+
+
+How to start
+  Pilot project: well defined and well understood problem
+  Quick and mesurable benefit
+  easy to get DataAggregation
+
+  invest a small Hadoop cluster
+  DS consultants
+  Produce quicli results and show the values
+
+then:
+  Gain budget
+  Enlarge cluster
+
+Off Loading
+  chose an expensive functionality in your company
+  reimplement leverage it's cost-effectiveness
+
+  cost from IT budget
+  you should be trasnparent to the business cluster
+
+New operational project
+  Iot or Social media analytics
+  portfolio risk analysis, regulations, anti-money laundry
+  healthcare
+  smart sensor, quality, preventive
+
+CENTRAL POINT OF GOVERNANCE:
+secure and managed access to Data
+centralized data quality
+data lifecycle management
+data lineage
+
+ERRORS
+Data Silos : better in a common shared env
+
+
+hadoop + online datastore
+
+
+YARN
+map reduce: for data processing
+mpi: data processing
+hdfs: distributed redundant storage
+YARN: resource management
+
+
+uarn master slave architecture:
+resourcemanager does scheduling
+nodemanagers run on nodes and manage containers
+
+containers have well-defined resource constraints and are isolated
+applications run inside them
+each application spawns an application master that interacts with YARN
+
+orchestrates memory cpu etc..
+
+
+application master instance of library negotiating resources from the resourcemanager
+
+Application master resource model:
+resource-name
+resource-managementmemory in MB
+cores cpu
+
+HDFS
+Master/Slave architecture
+
+data is  replicated
+
+nameNode holds metadata and filesystem ref
+dataNodes run on notes hold dataframe communicate: I'm alive, I have data xb
+
+
+Block minimun data can be read or written
+default size 128 MB
+files chopped into Block
+if data it's less they dont' use data on disk
+
+rack are shared failure zones
+
+replica placement
+
+HDFS slits file into blocks
+and distributes replicas in the
+
+hdfs dfs
+hdfs file browser in hue

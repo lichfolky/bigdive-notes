@@ -1,0 +1,16 @@
+# List Java versions installed
+/usr/libexec/java_home -V
+
+# Java 11
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+
+# Java 1.8
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+
+
+jdk-8u211-macosx-x64
+https://docs.oracle.com/javase/tutorial/essential/environment/paths.html
+https://www.oracle.com/technetwork/java/javaee/downloads/jdk8-downloads-2133151.html
+
+brew cask install java8

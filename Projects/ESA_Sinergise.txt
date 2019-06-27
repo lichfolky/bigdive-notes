@@ -1,0 +1,49 @@
+eESA Project
+tools for conservation for sustainable development
+urbanization
+usage of settlements
+
+Derived indicators:
+wsf-imperviousness (green areas)
+floor space index FSI (tall buildings)
+sustainable development goals
+
+
+dataset from urban tep
+
+Las Vegas
+Manaus
+2005 as training
+timescan vs 3d conservation
+
+challenge monitor the infrasctucture evolution of cities
+
+SENTINEL Hub dataset
+
+sentinel Hub Sentinel + copernicus
+eo-learn
+
+sentinel 2
+revisit time 5 days
+10 m resolution
+-> not clear (CLOUDS!)
+
+sentinel 1
+revisit time 6 days
+20m resolution
+see through clouds
+rather complicated data
+
+
+Problems
+
+spectral bands -> Cloud filtering
+  atmospheric correction
+
+Geopositional accuracy: image shake a little
+sentinel hub app web
+
+you get image cities, clean data,
+
+----
+Understanding and visualizing the growth
