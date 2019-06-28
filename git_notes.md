@@ -6,9 +6,6 @@
 
 ### Start a git repo on Github
 Move to the folder then Setup the folder
-```
-git init
-```
 Setup a git repo
 ```
 git init
@@ -28,8 +25,8 @@ git remote add origin https://github.com/lichfolky/BigDive8Notes.git
 Push the current branch to the remote  upstream
 ```
 git push origin master
-# or
-git push --set-upstream origin master
+# and
+?? git push --set-upstream origin master
 ```
 remove git init (if something bad happens)
 ```
