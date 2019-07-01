@@ -138,3 +138,114 @@ counts the most dichotomies on any N points
 
 
 > hypothesis set: $sign(w^+x)$
+
+we replace the M with the growth function
+
+we can learn only if the growth function it's polinomial!
+
+**Decision tree**
+
+if you don't give a limitation to the decision tree you will not generalize
+
+**the VC dimension**
+
+The hypothesis set h is said to shatter a set S\C X
+shattare realase all 2^N possibilities
+
+the larges number of n  
+the most points h can shatter
+
+k os a break point for h
+
+k > $d_{vc}(H)$
+
+$d_{vc}(H)$ is finite => g /in generalize
+
+
+degree of freedom
+
+\#of parameters analog degrees of freedom  
+$d_vc$ equivalente 'binary' degreees of
+
+
+expected error
+
+in sample error growth the e_out decrease
+
+**Validation Curve**
+```
+generalization error
+training error
+
+in relation on model complexity
+
+
+OVERFITTING<>OVERFITTING
+
+```
+##### Estimanting $E_{out}$
+
+out of sample error is estimated via validation
+
+the more data point the closer to $E_{out}$
+
+###Validation Techniques
+
+##### train test splice
+##### K-cross validation
+
+n validations, with a piece big #Datapoint/n
+after avg of them
+
+##### Leave one out cross validation
+
+ we feep a single sample for validations
+n-1 to fit the model
+
+#### model bias on learning curve
+
+graph with data and generalization e
+
+
+the hyperparameters control the degree of liberty
+
+```
+The rocket
+
+Data is fuel
+The rocket it's fuel
+```
+
+#### Regularization
+
+linear regression with regularization
+you can impose limits to the choice of parameters
+adding limitations
+
+
+### EX
+
+
+`model = LinearRegression(normalize=True, fit_intercept=False)`
+fit_intercept deve passare dallo zero
+
+hyperparameters:  
+normalize=True,  
+fit_intercept=False
+
+parameters, you cant't choose them they are choosen by the Algorithm:  
+model.coef_
+model.intercept_
+
+
+>model.predict([[3], [4], [2000]])  
+
+for each row, predict a target
+
+
+X_fit.ravel() = X_fit.flatten()
+
+
+#### Coefficient of Determination $R^2$
+
+[https://en.wikipedia.org/wiki/Coefficient_of_determination](https://en.wikipedia.org/wiki/Coefficient_of_determination)

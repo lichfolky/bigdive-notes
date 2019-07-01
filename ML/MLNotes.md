@@ -1,4 +1,6 @@
-## Machine learning - *Going Data-Driven*
+# Part 1
+### Machine learning
+#### *Going Data-Driven*
 
 **Complicate** doesn't mean **complex**  
 It's not complex if you know how it works
@@ -187,3 +189,12 @@ generate two different sets randomly
 
 always dubt about the results:  
 also the random trainset selection can be an not optimal one!
+
+
+# Part 2
+
+biological plausibility
+keras and
+
+
+Shallow Nets to Inception
