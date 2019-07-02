@@ -20,7 +20,7 @@ Equation describing the processes (Process driven) -> Fitted model describing re
 
 #### Classification
 
-Gathering (Visualize) -> Labelling (Classify)  
+Gathering (Visualise) -> Labelling (Classify)  
 how to separate classes?
 
 we want to **interfere data (prediction)**
@@ -38,7 +38,7 @@ If the data it's bad -> the result it's bad.
 
 A real NN:
 dendrites, axon, terminal axon, synapse
-time dependent, unsynchronized
+time dependent, unsynchronised
 it's not really using BackPropagation
 
 traditionally we had one hidden layer
@@ -187,14 +187,108 @@ generate two different sets randomly
 > ctrl + e cursor at the end of block  
 > cmd + click for multiple cursors  
 
-always dubt about the results:  
-also the random trainset selection can be an not optimal one!
+Always dubt about the results: the random train-set selection can be a non optimal one.
 
+# Part 2 - Deep Learning
 
-# Part 2
+Geoffrey Hinton
+
 
 biological plausibility
 keras and
 
-
 Shallow Nets to Inception
+
+hierarchical
+
+deep learning learns layers of features
+
+### error minimisation
+
+Convergence
+global minimum and local minimum
+
+Deep learning
+do automatic feature extraction : domain free!
+
+Computer prevision:
++ recognition
++ detection
++ segmentation
+
+Deep learning for computer vision
+
++ inpainting
++ superresolution
+
+Captioning:
++ indexing
++ subtexing
+
++ pose estimation
+
+GauGAN
+with generative adversarial network (GAN)
+generator network -> discriminator Networks
+falsario -> disctiminatore
+entrambi diventano bravi! Generano images:
+
+v3 inception google Adversarial attach
+
+disegno -> foto
+
+### The black box problems
+we don't give instruction anymore, only examples
+we lost control of what there's inside
+
++ Biased system
++ Right for the wrong reason
++ GDPR non-compliancy
++ no trust from experts, answer it's only a label
++ adversarial vulnerability
+
+# Explainable AI
+DARPA XAI project
+Xai Explanation
+
+**Keras**
+spykit but for Deep Learning
+
+
+dense if has input layer
+
+there's a bias
+
+layers freeze to not train them anymore
+**Input**
+flat image from 16*16 to 256
+
+**Output**
+1 output Perceptron for class
+1 noted encoding [0,0,0,0,0,0,0,1,0,0,0,0]= 7
+
+optimizer = 'adam'
+
+epochs: go throught all input data xgtimes
+
+MultilayerPerceptron has flat Inputloose the locality
+
+#### Deep convolutional Neural Networks
+
+convolution + non linearity --> max pooling
++
+fully connected layers
+
+Nx binary classification
+
+### activation funcions
+hystorically step funcions
+
+not really derivable
+low or hig derivate = 0
+  gradiant vanish
+
+rectified linear unit
+relue leaky
+
+easy derivative -> to appliate
