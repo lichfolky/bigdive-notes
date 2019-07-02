@@ -339,7 +339,7 @@ the receipting field should have ha size big as the size of the kernerls
 
    )
 
-max pooling it's a disaster... it's work
+max pooling it's a disaster... and it's a disaster that's working
 
 hilton capsules net it's a variance of max pooling
 
@@ -348,6 +348,46 @@ hilton capsules net it's a variance of max pooling
 
 convolution and pooling -> classification
 
-we flatten all (to)
+we flatten all to feed the data to the MLP
+we loose the space relation but we already extracted the features
 
 **dropout regularization** This technique turns off neurons the let information flow in multiple layers sparsely. It randomly shout off neurons in the (precedent) layer.
+
+Dense layer (fully connected)
+
+we try to replicate successful architectures
+> VGG (visual geometry group)
+> alex net
+
+do a .summary() to the model to see shapes and Parameters
+
+(BatchSize(None if not trained), filter dimensions, #offilters)
+
+Output shapes:
+
+size: X*Y*#filters
+After convolution the size change
+32*32->28*28 if filter size 5*5-> (-4,-4)
+
+activation maps sizes
+30 * (5 * 5) filters * 3 channels + 5
+(every filter has a bias) = 2280
+
+30 * (5 * 5 * 3 + 1) = 2280
+
+pool size (2,2) it's common choice
+
+
+
+a filter outputs only one Number
+
+Batch
+
+the output layer will have a dimension as the classes we want to classify
+
+
+the MLP it's more dependent from image size
+no weight sharing! (pooling and conv are)
+
+**wide and deep** one of the input of the MLP can be an extra feature added by us
+(age, image filters etc...)
