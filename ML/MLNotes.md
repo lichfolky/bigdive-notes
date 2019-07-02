@@ -1,4 +1,4 @@
-# Part 1
+randomised# Part 1
 ### Machine learning
 #### *Going Data-Driven*
 
@@ -292,3 +292,62 @@ rectified linear unit
 relue leaky
 
 easy derivative -> to appliate
+
+
+### Deep Convolutional NN
+
+weights initially randomised
+
+RGB = 3 channels
+> plt.imshow(cat.astype('int')[:200,-400:])
+> plt.imshow(cat.astype('int')) [:200,-400:,0])
+>plt.rc('image', cmap ='plasma')
+
+batch of 3d objects ->
+##### Convolution
+ it works on 2D data, divide image by channels
+ 'filters' or 'kernels':
+ size of kernels it's (3-7 normally) a hyperparameter.
+
+ if the result >0 i propagate the signal
+
+ Horizontal and vertical stride: how much forward i jump in each (usually they have same value)
+
+ the weights of kernels are small! not the size of img. I don't care about the image size. weights sharing.
+
+
+ invarianza transazionale.
+
+ output it's an activation map.
+
+ >from keras.layers.convolutional import Conv2D
+
+Conv2D(  
+  ...  
+  padding= fake border to take more time the corners of img ('valid', 'same')  
+  ...  
+  )
+
+##### max pooling
+the size of the kernels shoul be at least
+the receipting field should have ha size big as the size of the kernerls
+
+ aggregation operation : max (max pooling)
+
+ maxpooling_2D(
+
+
+   )
+
+max pooling it's a disaster... it's work
+
+hilton capsules net it's a variance of max pooling
+
+
+### mondel = sequential()
+
+convolution and pooling -> classification
+
+we flatten all (to)
+
+**dropout regularization** This technique turns off neurons the let information flow in multiple layers sparsely. It randomly shout off neurons in the (precedent) layer.

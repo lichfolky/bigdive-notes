@@ -1,13 +1,12 @@
 # ML Intro
 
-
-![bo](Images\Top Prediction Algorithms.jpg)
-
 Classic examples of DL:
 + semantic segmentation image reconstruction
 + speech recognition
 + image annotation
 + face recognition
+
+![boo](https://blog.dataiku.com/hs-fs/hubfs/Top%20Prediction%20Algorithms.jpg?width=1368&height=1936&name=Top%20Prediction%20Algorithms.jpg)
 
 **Classical error:**
 thinking that most complex the model is, the better is for my data
@@ -249,3 +248,27 @@ X_fit.ravel() = X_fit.flatten()
 #### Coefficient of Determination $R^2$
 
 [https://en.wikipedia.org/wiki/Coefficient_of_determination](https://en.wikipedia.org/wiki/Coefficient_of_determination)
+
+
+## Part 3
+
+Batch size
+
+gradient descend
+
+Test loss 0.509 % points we get wrong (1 - accuracy)
+
+every perceptron has a bias, it's like a different weight  
+$biasInput = 1*w_b$.
+
+**learning rate**
+
+start with a medium learning rate (it should't diverge)
+after you decrease it.
+
+the gradient it's always upwards.  
+(It's calcuated with a partial differentiation: $G = ∂J(W)/∂W$ )
+
+update weights: $W = W - ηG$
+
+[exercise](https://playground.tensorflow.org)
