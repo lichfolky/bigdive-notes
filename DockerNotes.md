@@ -14,3 +14,13 @@ stop / remove all of Docker containers:
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
+
+
+
+docker tensorflow
+
+docker pull tensorflow/tensorflow:latest-py3-jupyter
+
+docker run -it --rm tensorflow/tensorflow-p 8888:8888 tensorflow/ bash
+
+docker run -it -p 8888:8888 tensorflow/tensorflow:latest-py3-jupyter

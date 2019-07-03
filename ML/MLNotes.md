@@ -391,3 +391,12 @@ no weight sharing! (pooling and conv are)
 
 **wide and deep** one of the input of the MLP can be an extra feature added by us
 (age, image filters etc...)
+
+
+### Pretrained models
+#### Inception V3
+
+predicted  
+decode_prediction()
+
+adam optimiser
