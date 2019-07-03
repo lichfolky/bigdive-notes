@@ -19,20 +19,20 @@ result pdf with map
 ice moves! The sooner
 
 
-sun reflect and blind optical obesrvator
-but radar measures (the intensity of the return signal as a funcion of time
- (translate to a function of dinstance))
-it see throught clouds!
+sun reflect and blind optical sensor
+but radar measures (the intensity of the return signal as a function of time
+ (translate to a function of distance))
+it see thought clouds!
 
 SENTINEL 1
 
 dataset two layers of dataset H and H+V
 incidence angle
 
-more rought it's the ice more the incident wawe is big (more return)
+more rough it's the ice more the incident wawe is big (more return)
 
 amplitude vs incidence angle
-varies a lot with incidence angke, rìnd speed, relative wind direction
+varies a lot with incidence angle, speed, relative wind direction
 
 radarsat
 automated production of icecharts
