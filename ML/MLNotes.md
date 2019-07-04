@@ -375,7 +375,7 @@ activation maps sizes
 
 30 * (5 * 5 * 3 + 1) = 2280
 
-pool size (2,2) it's common choice
+pool size (2,2) it's common choice.
 
 
 
